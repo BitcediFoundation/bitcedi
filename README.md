@@ -1,4 +1,4 @@
-## Building Bitcedi
+## Building BitcediFoundation
 
 ### On *nix:
 

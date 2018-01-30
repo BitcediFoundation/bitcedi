@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Cryptonote developers
-// Copyright (c) 2014-2016 SDN developers
+// Copyright (c) 2014-2016 DigitalNote developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -51,9 +51,9 @@ namespace Crypto {
   }
 
   cn_context::~cn_context() {
-    if (munmap(data, MAP_SIZE) != 0) {
-      throw bad_alloc();
-    }
+    //if (munmap(data, MAP_SIZE) != 0) {
+    //  throw bad_alloc();
+   // }
   }
 
 #endif

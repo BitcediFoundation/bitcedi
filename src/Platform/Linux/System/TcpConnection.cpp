@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Cryptonote developers
-// Copyright (c) 2014-2016 SDN developers
+// Copyright (c) 2014-2016 DigitalNote developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -69,7 +69,7 @@ size_t TcpConnection::read(uint8_t* data, size_t size) {
   std::string message;
   ssize_t transferred = ::recv(connection, (void *)data, size, 0);
   if (transferred == -1) {
-    if (errno != EAGAIN  && errno != EWOULDBLOCK) {
+    if (errno != EAGAIN) {
       message = "recv failed, " + lastErrorMessage();
     } else {
       epoll_event connectionEvent;
@@ -165,7 +165,7 @@ std::size_t TcpConnection::write(const uint8_t* data, size_t size) {
 
   ssize_t transferred = ::send(connection, (void *)data, size, MSG_NOSIGNAL);
   if (transferred == -1) {
-    if (errno != EAGAIN  && errno != EWOULDBLOCK) {
+    if (errno != EAGAIN) {
       message = "send failed, " + lastErrorMessage();
     } else {
       epoll_event connectionEvent;

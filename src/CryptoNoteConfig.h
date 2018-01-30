@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Cryptonote developers
-// Copyright (c) 2014-2016 SDN developers
+// Copyright (c) 2014-2016 DigitalNote developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -83,7 +83,7 @@ const uint64_t START_BLOCK_REWARD                            = (UINT64_C(80) * p
 const uint64_t MIN_BLOCK_REWARD                              = (UINT64_C(5) * parameters::COIN);
 const uint64_t REWARD_HALVING_INTERVAL                       = (UINT64_C(66000));
 
-const char     CRYPTONOTE_NAME[]                             = "bitcedi";
+const char     CRYPTONOTE_NAME[]                             = "BitcediFoundation";
 const char     GENESIS_COINBASE_TX_HEX[]                     = "010601ff000180a0d9e61d029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121019e2d1a633f2a54ff1a415e0051d5a699461d9c95479f67c8568446581c2e3782";
 const uint32_t GENESIS_NONCE                                 = 70;
 
@@ -117,9 +117,12 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "85ae8734f90bc1ee295ceb0ec05a49852d4dbbc9d1c27a619b5f4bdf26a0196e";
 
 const std::initializer_list<const char*> SEED_NODES = {
-   "seed0.bitcedi.org:55008",
-   "seed1.bitcedi.org:55008",
-   "seed2.bitcedi.org:55008"
+   "seed0.BitcediFoundation.org:55008",
+   "seed1.BitcediFoundation.org:55008",
+   "seed2.BitcediFoundation.org:55008",
+   "209.250.247.153:55008",
+   "85.255.6.11:55008",
+   "209.250.255.140:55008"		
 };
 
 struct CheckpointData {

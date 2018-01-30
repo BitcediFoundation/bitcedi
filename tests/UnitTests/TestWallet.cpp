@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Cryptonote developers
-// Copyright (c) 2014-2016 SDN developers
+// Copyright (c) 2014-2016 DigitalNote developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1157,7 +1157,7 @@ TEST_F(WalletApi, IWalletDataCompatibilityDetails) {
   tx1.unlockTime = 12;
   tx1.totalAmount = 1234567890;
   tx1.timestamp = (uint64_t) 8899007711;
-  tx1.extra = "jsjeokvsnxcvkhdoifjaslkcvnvuergeonlsdnlaksmdclkasowehunkjn";
+  tx1.extra = "jsjeokvsnxcvkhdoifjaslkcvnvuergeonlDigitalNotelaksmdclkasowehunkjn";
   tx1.fee = 1000;
   tx1.isCoinbase = false;
   txs.push_back(tx1);
